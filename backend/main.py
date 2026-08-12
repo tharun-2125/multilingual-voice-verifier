@@ -30,7 +30,17 @@ app = FastAPI(title="TraceClaim API")
 # Configure CORS for frontend access
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:5174", "http://localhost:3000", "http://localhost:8080"],
+    allow_origins=[
+        # Local development
+        "http://localhost:5173",
+        "http://localhost:5174",
+        "http://localhost:3000",
+        "http://localhost:8080",
+        # Production — Vercel (update this after your first Vercel deploy)
+        "https://traceclaim.vercel.app",
+        # Allow all Vercel preview deployments for this project
+        "https://traceclaim-*.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

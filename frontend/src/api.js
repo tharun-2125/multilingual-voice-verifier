@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:8000/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 
 export const uploadAudio = async (file, language, sourceLanguage, pipeline, suggestLinks = true, claimExtraction = true) => {
   const formData = new FormData();
