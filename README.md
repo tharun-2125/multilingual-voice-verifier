@@ -176,8 +176,10 @@ Whisper handles Tamil-English code-mixed audio but may occasionally bias towards
 
 ---
 
-## 👤 Author
+## 👥 Authors
 
 **Tharun Natarajan** — [tharunnatarajan2125@gmail.com](mailto:tharunnatarajan2125@gmail.com)
+
+**Devendran** — [ddeve572@gmail.com](mailto:ddeve572@gmail.com)
 
 Built as an AI/ML engineering portfolio project.
