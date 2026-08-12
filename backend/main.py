@@ -36,10 +36,8 @@ app.add_middleware(
         "http://localhost:5174",
         "http://localhost:3000",
         "http://localhost:8080",
-        # Production — Vercel (update this after your first Vercel deploy)
-        "https://traceclaim.vercel.app",
-        # Allow all Vercel preview deployments for this project
-        "https://traceclaim-*.vercel.app",
+        # Production — Vercel
+        "https://multilingual-voice-verifier.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
